@@ -3,7 +3,10 @@ AI-powered resume evaluation engine that combines rule-based checks with LLM-bas
 ---
 
 ## 🎥 Project Demo Video
-Watch the demo on [Google Drive](https://drive.google.com/file/d/1LwXcP8V37r61GzAnYQ5xXt7dk1K-wXtS/view?usp=sharing)
+
+<iframe width="560" height="315" src="https://drive.google.com/file/d/1LwXcP8V37r61GzAnYQ5xXt7dk1K-wXtS/view?usp=sharing" 
+title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
 ---
 
 ## Objective
