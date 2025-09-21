@@ -1,0 +1,8 @@
+flask
+PyMuPDF
+python-docx
+sentence-transformers
+scikit-learn
+pandas
+torch
+transformers

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Evaluation Results</h1>
+        <p><strong>Relevance Score:</strong> {{ score }} / 100</p>
+
+        <p>
+            <strong>Verdict:</strong>
+            <span class="verdict 
+                {% if verdict == 'High' %} high 
+                {% elif verdict == 'Medium' %} medium 
+                {% else %} low {% endif %}">
+                {{ verdict }}
+            </span>
+        </p>
+
+        <h3>Missing Elements:</h3>
+        {% if missing %}
+            <ul>
+                {% for item in missing %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Great! No major skills missing.</p>
+        {% endif %}
+
+        <a href="{{ url_for('index') }}">⬅ Back to Upload</a>
+    </div>
+</body>
+</html>

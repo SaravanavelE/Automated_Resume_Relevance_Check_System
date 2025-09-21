@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Relevance Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Relevance Checker</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label>Upload Resume (PDF/DOCX):</label>
+            <input type="file" name="resume" required>
+
+            <label>Upload Job Description (PDF/DOCX):</label>
+            <input type="file" name="jd" required>
+
+            <button type="submit">Check Relevance</button>
+        </form>
+    </div>
+</body>
+</html>
